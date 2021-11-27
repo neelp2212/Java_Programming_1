@@ -156,6 +156,9 @@ class main {
          */
 
         // Number changes when
+        /*
+
+
         Scanner scanner = new Scanner(System.in);
 
         while (true)
@@ -171,6 +174,47 @@ class main {
 
             System.out.println("Your input was " + number);
         }
+
+         */
+        /*
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Input a number");
+            int number = Integer.parseInt(scanner.nextLine());
+
+            if (number == 0) {
+                break;
+            }
+
+            if (number < 0) {
+                System.out.println("Unfit number");
+                continue;
+            }
+
+            System.out.println(number * number);
+        }
+
+         */
+
+             /*
+        Scanner scanner = new Scanner(System.in);
+
+        while (true)
+        {
+            System.out.println("Insert positive integers");
+            int number = Integer.parseInt(scanner.nextLine());
+
+            if (number <= 0)
+            {
+                System.out.println("Unfit number! Try again.");
+                continue;
+            }
+
+            System.out.println("Your input was " + number);
+        }
+
+         */
 
     }
 }
