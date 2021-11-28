@@ -1,4 +1,4 @@
-
+import java.util.Arraylist;
 import java.util.Scanner;
 
 class main {
@@ -250,8 +250,78 @@ class main {
         } else {
             System.out.println("Gets nothing.");
         }
+
+     */
+        // The array list is used to get numbers by its index and it is very helpful in companies.
+    /*
+
+
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Tom");
+        list.add("Emma");
+        list.add("Alex");
+        list.add("Mary");
+
+        System.out.println(list.get(2));
+
+        ArrayList<Integer> num = new ArrayList<>();
+        num.add(1);
+        num.add(3);
+        num.add(5);
+        num.add(7);
+        num.add(0);
+        num.add(1);
+        System.out.println("The sum of " + num.get(1) + " and " + num.get(2) + " is " );
+        System.out.println(num.get(1) + num.get(2));
+
+     */
+        /*
+
+        ArrayList<String> list = new ArrayList<>();
+        System.out.println("Number of values on the list: " + list.size());
+
+        list.add("First");
+        System.out.println("Number of values on the list: " + list.size());
+
+        int values = list.size();
+
+        list.add("Second");
+        System.out.println("Number of values on the list: " + values);
+         */
+
+        // In this program execution it shows how the size of te list shows list.size();
+
+    /*
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Tom");
+        list.add("Emma");
+        list.add("Alex");
+        list.add("Mary");
+        list.add("Tom");
+        list.add("Emma");
+        list.add("Alex");
+        list.add("Mary");
+        list.add("Tom");
+        list.add("Emma");
+        list.add("Alex");
+        list.add("Mary");
+        list.add("Tom");
+        list.add("Emma");
+        list.add("Alex");
+        list.add("Mary");
+        list.add("Tom");
+        list.add("Emma");
+        list.add("Alex");
+        list.add("Mary");
+        list.add("Tom");
+        list.add("Emma");
+        list.add("Alex");
+        list.add("Mary");
+        System.out.println("In Total: " + list.size());
         
      */
+
+
 
     }
 }
