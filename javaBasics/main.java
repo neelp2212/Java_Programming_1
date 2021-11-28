@@ -318,8 +318,49 @@ class main {
         list.add("Alex");
         list.add("Mary");
         System.out.println("In Total: " + list.size());
-        
+
      */
+        /*
+        String text = "volcanologist";
+
+        if (text.contains("can")) {
+            System.out.println("can was found");
+        }
+
+        if (!text.contains("tin")) {
+            System.out.println("tin wasn't found");
+        }
+
+         */
+
+
+
+        /*
+        System.out.print("How many numbers? ");
+        int howMany = Integer.valueOf(reader.nextLine());
+
+        int[] numbers = new int[howMany];
+
+        System.out.println("Enter the numbers:");
+
+        int index = 0;
+        while (index < numbers.length) {
+            numbers[index] = Integer.valueOf(reader.nextLine());
+            index = index + 1;
+        }
+
+
+        System.out.println("Here are the numbers again:");
+
+        index = 0;
+        while (index < numbers.length) {
+            System.out.println(numbers[index]);
+            index = index + 1;
+        }
+
+         */
+
+
 
 
 
