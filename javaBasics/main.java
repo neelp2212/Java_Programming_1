@@ -1,6 +1,42 @@
 import java.util.Arraylist;
 import java.util.Scanner;
 
+class Person
+{
+    private String name;
+    private int age;
+
+    public Person (String initialName, int age)
+    {
+        this.age = age;
+        this.name = initialName;
+    }
+    public void printPerson()
+    {
+        System.out.println(this.name + ", age " + this.age + " years");
+    }
+}
+
+class Dog
+{
+    private String name;
+    private String breed;
+    private int house_number;
+
+    public Dog (String name, String breed, int house_number)
+    {
+        this.name = name;
+        this.breed = breed;
+        this.house_number = house_number;
+
+    }
+
+    public void printDoggo()
+    {
+        System.out.println("Name: " + this.name + " Breed: " + this.breed + " House number: " + this.house_number);
+    }
+}
+
 class main {
 
     public static void main(String[] args) {
@@ -391,6 +427,74 @@ class main {
         }
 
          */
+
+        /*
+        Scanner reader = new Scanner(System.in);
+        System.out.println("please Enter your Username->\n");
+        String username = reader.nextLine();
+        System.out.println("please Enter your Password ->\n");
+        String password =reader.nextLine();
+
+        if (username.equals(password))
+        {
+            System.out.println("The Username and Password are equal!  Please change and try again");
+        } else {
+            System.out.println("You Successfully login");
+        }
+
+
+        Scanner reader = new Scanner(System.in);
+        int sum = 0;
+
+        while (true) {
+            String input = reader.nextLine();
+            if (input.equals("")) {
+                break;
+            }
+
+            String[] parts = input.split(",");
+            sum = sum + Integer.valueOf(parts[1]);
+        }
+
+        System.out.println("Sum of the ages is " + sum);
+
+
+        Scanner reader = new Scanner(System.in);
+        int sum = 0;
+        int count = 0;
+
+        while (true) {
+            String input = reader.nextLine();
+            if (input.equals("")) {
+                break;
+            }
+
+            String[] parts = input.split(",");
+            sum = sum + Integer.valueOf(parts[1]);
+            count = count + 1;
+        }
+
+        if (count > 0) {
+            System.out.println("Age average: " + (1.0 * sum / count));
+        } else {
+            System.out.println("No input.");
+        }
+
+         */
+
+        Person one = new Person("Neel Patel",21);
+        Person two = new Person("Kiran Patel", 39);
+        Person three = new Person("Sneh Patel", 12);
+        one.printPerson();
+        two.printPerson();
+        three.printPerson();
+
+
+        Dog bruns = new Dog("Bruno","Labrador", 3);
+        Dog blacky = new Dog("Blacky", "Scrabreader", 4);
+
+        bruns.printDoggo();
+        blacky.printDoggo();
 
 
 
