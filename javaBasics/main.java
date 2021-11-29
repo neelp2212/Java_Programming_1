@@ -359,6 +359,38 @@ class main {
         }
 
          */
+        /*
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Enter Your name and age like -> Name,age");
+
+        while (true) {
+            String input = reader.nextLine();
+            if (input.equals("")) {
+                break;
+            }
+
+            String[] pieces = input.split(",");
+            System.out.println("Name: " + pieces[0] + ", age: " + pieces[1]);
+        }
+         */
+
+        // Exercise for password correction Username and password cant be same
+
+        /*
+        Scanner reader = new Scanner(System.in);
+        System.out.println("please Enter your Username->\n");
+        String username = reader.nextLine();
+        System.out.println("please Enter your Password ->\n");
+        String password =reader.nextLine();
+
+        if (username.equals(password))
+        {
+            System.out.println("The Username and Password are equal!  Please change and try again");
+        } else {
+            System.out.println("You Successfully login");
+        }
+
+         */
 
 
 
