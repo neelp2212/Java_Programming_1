@@ -1,6 +1,29 @@
 import java.util.Arraylist;
 import java.util.Scanner;
 
+class DecreasingCounter {
+    private int value;
+
+    public DecreasingCounter(int initialValue) {
+        this.value = initialValue;
+    }
+
+    public void printValue()
+    {
+        System.out.println("value: " + this.value);
+    }
+
+    public void decrement()
+    {
+        this.value = this.value - 1;
+    }
+
+    public void reset()
+    {
+        this.value = 0;
+    }
+}
+
 class Whistle
 {
     private String sound;
@@ -50,6 +73,26 @@ class Dog
         System.out.println("Name: " + this.name + " Breed: " + this.breed + " House number: " + this.house_number);
     }
 }
+
+class Debt
+{
+    private double balance;
+    private double interestRate;
+
+    public Debt(double initialBalance, double initialInterest) {
+        this.balance = initialBalance;
+        this.interestRate = initialInterest;
+    }
+    public void  printBalance()
+    {
+        System.out.println("Current Value: " + this.balance);
+    }
+
+    public void waitOneYear()
+    {
+        this.balance = this.balance * this.interestRate;
+    }
+
 
 class main {
 
@@ -494,7 +537,9 @@ class main {
             System.out.println("No input.");
         }
 
-         */
+        */
+
+        /*
 
         Person one = new Person("Neel Patel",21);
         Person two = new Person("Kiran Patel", 39);
@@ -518,6 +563,45 @@ class main {
         rooterWhistle.soundCheck();
         duckWhistle.soundCheck();
 
+
+         */
+
+/*
+        DecreasingCounter counter = new DecreasingCounter(2);
+
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
+
+        counter.reset();
+        counter.printValue();
+
+*/
+
+    /*
+        Debt mortgage = new Debt(120000.0, 1.01);
+        mortgage.printBalance();
+
+        mortgage.waitOneYear();
+        mortgage.printBalance();
+
+        int years = 0;
+
+        while (years < 20) {
+            mortgage.waitOneYear();
+            years = years + 1;
+        }
+
+        mortgage.printBalance();
+*/
+        // Two Exercise added !
 
 
 
