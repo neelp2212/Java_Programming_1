@@ -1,6 +1,20 @@
 import java.util.Arraylist;
 import java.util.Scanner;
 
+class Whistle
+{
+    private String sound;
+
+    public Whistle(String whistleSound)
+    {
+        this.sound = whistleSound;
+    }
+
+    public void soundCheck()
+    {
+        System.out.println(this.sound);
+    }
+}
 class Person
 {
     private String name;
@@ -496,6 +510,13 @@ class main {
         bruns.printDoggo();
         blacky.printDoggo();
 
+
+        Whistle  duckWhistle = new Whistle("Kvaak");
+        Whistle  rooterWhistle = new Whistle("Peef");
+
+        duckWhistle.soundCheck();
+        rooterWhistle.soundCheck();
+        duckWhistle.soundCheck();
 
 
 
