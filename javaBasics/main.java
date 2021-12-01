@@ -603,6 +603,63 @@ class main {
 */
         // Two Exercise added !
 
+        Person pekka = new Person("Pekka");
+        Person antti = new Person("Antti");
+
+        pekka.growOlder();
+        pekka.growOlder();
+
+        antti.growOlder();
+
+        System.out.println("Pekka's age: " + pekka.returnAge());
+        System.out.println("Antti's age: " + antti.returnAge())
+        int combined = pekka.returnAge() + antti.returnAge();
+
+        System.out.println("Pekka's and Antti's combined age " + combined + " years");
+
+
+
+
+        Teacher first = new Teacher();
+        Teacher second = new Teacher();
+        Teacher third = new Teacher();
+
+        double average = (first.grade() + second.grade() + third.grade()) / 3.0;
+
+        System.out.println("Grading average " + average);
+
+
+
+
+        Person pekka = new Person("Pekka");
+        Person antti = new Person("Antti");
+
+        int i = 0;
+        while (i < 30) {
+            pekka.growOlder();
+            i = i + 1;
+        }
+
+        antti.growOlder();
+
+        System.out.println("");
+
+        if (antti.isOfLegalAge()) {
+            System.out.print("of legal age: ");
+            antti.printPerson();
+        } else {
+            System.out.print("underage: ");
+            antti.printPerson();
+        }
+
+        if (pekka.isOfLegalAge()) {
+            System.out.print("of legal age: ");
+            pekka.printPerson();
+        } else {
+            System.out.print("underage: ");
+            pekka.printPerson();
+        }
+    }
 
 
     }
