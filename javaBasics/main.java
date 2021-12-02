@@ -1,6 +1,64 @@
 import java.util.Arraylist;
 import java.util.Scanner;
 
+class Statistics
+{
+    private int count;
+    private int sum;
+    private double average;
+
+    public Statistics()
+    {
+        this.count = 0;
+        this.sum = 0;
+        this.average = 0;
+    }
+    public void addNumber(int addNumber)
+    {
+        this.sum += addNumber;
+        this.count++;
+    }
+    public int getCount()
+    {
+        return this.count;
+    }
+    public int sum()
+    {
+        return this.sum;
+    }
+    public double average()
+    {
+        this.average = (double) this.sum / this.count;
+        return this.average;
+    }
+
+}
+class Person {
+    private String name;
+    private int age;
+    private int weight;
+    private int height;
+
+    public Person(String initialName) {
+        this.age = 0;
+        this.weight = 0;
+        this.height = 0;
+        this.name = initialName;
+    }
+
+    public void setHeight(int newHeight) {
+        this.height = newHeight;
+    }
+
+    public void setWeight(int newWeight) {
+        this.weight = newWeight;
+    }
+
+    public double bodyMassIndex() {
+        double heigthPerHundred = this.height / 100.0;
+        return this.weight / (heigthPerHundred * heigthPerHundred);
+    }
+}
 class DecreasingCounter {
     private int value;
 
@@ -603,6 +661,7 @@ class main {
 */
         // Two Exercise added !
 
+        /*
         Person pekka = new Person("Pekka");
         Person antti = new Person("Antti");
 
@@ -661,6 +720,34 @@ class main {
         }
     }
 
+         */
+/*
+
+    Person matti = new Person("Matti");
+    Person juhana = new Person("Juhana");
+
+        matti.setHeight(180);
+        matti.setWeight(86);
+
+        juhana.setHeight(175);
+        juhana.setWeight(64);
+
+        System.out.println(matti.getName() + ", body mass index is " + matti.bodyMassIndex());
+        System.out.println(juhana.getName() + ", body mass index is " + juhana.bodyMassIndex());
+
+
+        Statistics statistics = new Statistics();
+        statistics.addNumber(4);
+        statistics.addNumber(4);
+        statistics.addNumber(4);
+        statistics.addNumber(4);
+        statistics.addNumber(4);
+        System.out.println("Count: " + statistics.getCount());
+        System.out.println("Sum: " + statistics.sum());
+        System.out.println("Average: " + statistics.average());
+
+
+ */
 
     }
 }
