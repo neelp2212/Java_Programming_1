@@ -65,7 +65,28 @@ public class fileReading
         }
         catch(Exception e)
         {
-            System.out.println("Error: " + e.getMessage());
+               System.out.println("Error: " + e.getMessage());
+        }
+
+        Scanner userScanner = new Scanner(System.in);
+        System.out.println("Which file should have its contents printed?");
+
+        String fileName = userScanner.nextLine();
+
+
+        try ( Scanner fileScanner = new Scanner(Paths.get(fileName))) {
+
+            while (fileScanner.hasNextLine()) {
+
+                String row = fileScanner.nextLine();
+
+                System.out.println(row);
+
+            }
+
+        } catch (Exception e) {
+
+            System.out.println("Error:" + e.getMessage());
         }
 
     }
