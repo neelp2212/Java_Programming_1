@@ -1,8 +1,4 @@
-import java .util.Scanner;
-import java.nio.file.Paths;
 
-
-// Exercise 1
 class Account {
 
     private double balance;
@@ -31,10 +27,8 @@ class Account {
     }
 }
 
-
-
-public class YourFirstBankTransfer {
-
+public class cash_withdrawl
+{
     public static void main(String[] args) {
         //Exercise 1 Bank Transfer
         Account mattAccount = new Account("Matthews account", 1000.00);
@@ -46,9 +40,6 @@ public class YourFirstBankTransfer {
         myAccount.deposit(100);
 
         System.out.print(mattAccount + " \n " + myAccount);
-
-
-
 
     }
 }
