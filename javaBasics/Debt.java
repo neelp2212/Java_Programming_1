@@ -39,5 +39,14 @@ public class Debt
         System.out.println("After adding interest rate");
         mortgage.printBalance();
 
+        int years = 0;
+
+        while(years<20)
+        {
+            mortgage.waitOneYear();
+            years = years + 1;
+        }
+        mortgage.printBalance();
+
     }
 }
